@@ -1,0 +1,58 @@
+.banner{
+	padding-top: 250px; /*borde de arriba en el banner, desde afuera para adentro*/
+	padding-bottom: 250px; /*borde de abajo en el banner*/
+	background-color: #4be7fc
+
+}
+#servicios-destacados{
+	margin: 30px 0; /*cuando es solo dos valores, es el primer valor para arriba y abajo, el segundo es los costados*/
+
+}
+.titulo-seccion{
+	text-align: center; /*alineamiento*/
+	text-transform: uppercase; /*mayuscula*/
+	margin: 15px;
+}
+.titulo-seccion hr{
+	border-top: 5px solid #4be7fc;
+	max-width: 100px; /*ancho maximo para que se adapte a los dispositivos con que se ingrese a la pagina*/
+
+}
+#banner-medio{
+	font-color: white;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: #4be7fc;
+	text-align: center;
+	background: url(../imagenes/images2.jpg);
+	background-repeat: no-repeat; /*para que la imagen al ser muy chico no se repita mil veces para cubrir la seccion*/
+	background-size: cover; /*para ajustar al tamanho de la pagina*/
+	background-attachment: /*fijar la imagen de fondo para que no se mueva al desplazarse por la pagina*/
+	;
+
+}
+
+.bg-light { /*el punto se usa para una clase y el numeral es un id*/
+    background-color: #2180df !important;
+}
+
+#equipo {
+	margin:30px 0;
+}
+
+
+footer{
+	background-color: #000;
+	padding: 40px;
+
+}
+
+footer p {				/*referencia para aplicar al parrafo que esta dentro del footer*/
+	color: white;
+	font-size: 18px;
+
+}
+
+.pd-20{
+	padding: 20px;
+}
