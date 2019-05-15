@@ -40,6 +40,9 @@
 
         <div class="container">
           <div class="row"> <!--fila-->
+            <?php for ($i=0; $i < 3 ; $i++) { ?> <!--abrimos php y cerramos con la llave abierta-->
+              
+            <!--la i del medio es el que determina el numero de repeticiones-->
             <div class="col-md-4"> <!--columna-->
               <h3>Diseño web</h3>
               <p>
@@ -53,35 +56,10 @@
 
               <a href="detalles.php" class="btn btn-success">Detalles</a> <!--success es boton verde-->
             </div>
+          <?php } ?> <!--aca abrimos de nuevo el php para cerrar la llave e incluir el html sin crear conflicto en el codigo-->
 
-            <div class="col-md-4"> <!--columna-->
-              <h3>Diseño Grafico</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
 
-              <a href="detalles.php" class="btn btn-success">Detalles</a> <!--success es boton verde-->
-            </div>
-
-            <div class="col-md-4"> <!--columna-->
-              <h3>SEO</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-
-              <a href="detalles.php" class="btn btn-success">Detalles</a> <!--success es boton verde-->
-            </div>
-
+            
           </div> 
         </div>
       </section>
@@ -111,6 +89,12 @@
 
 
           <div class="row">
+
+            <?php
+            $x = 0;
+            while ($x <= 3) { ?> <!--estaria creando 5 copias porque dice menor o igual, si es menor nomas seria 4 copias-->
+              
+            
           <div class="col-md-3"> <!--espacio para el perfil de la persona o del articulo con foto-->
             
               <div class="card">
@@ -123,52 +107,11 @@
               </div>
 
           </div>
+          <?php
+          $x++;
+          } ?>
 
-
-          <div class="col-md-3">  <!--espacio para el perfil de la persona o del articulo con foto-->
-            
-              <div class="card">
-                <img src="imagenes/avatar.jpg" class="card-img-top" alt="..."> <!--img src, imagen ocupa un espacio y no el fondo-->
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              </div>
-
-          </div>
-
-
-          <div class="col-md-3">  <!--espacio para el perfil de la persona o del articulo con foto-->
-            
-              <div class="card">
-                <img src="imagenes/avatar.jpg" class="card-img-top" alt="..."> <!--img src, imagen ocupa un espacio y no el fondo-->
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              </div>
-
-          </div>
-
-
-
-          <div class="col-md-3">  <!--espacio para el perfil de la persona o del articulo con foto-->
-            
-              <div class="card">
-                <img src="imagenes/avatar.jpg" class="card-img-top" alt="..."> <!--img src, imagen ocupa un espacio y no el fondo-->
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              </div>
-
-          </div>
-
-
-
+    
 
           </div>
         </div>  
